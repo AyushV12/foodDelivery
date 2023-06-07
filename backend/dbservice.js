@@ -89,7 +89,7 @@ class DbService {
   }  
 
 
-  async postAReview(a,b){
+  async postReview(a,b){
     try{
         console.log("hereAtgetALlREviews")
         const response1= await new Promise((resolve,reject)=>{

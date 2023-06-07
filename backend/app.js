@@ -19,19 +19,24 @@ res1.then(data=>res.send(data))
 })
 
 app.post("/postReview",(req,res)=>{
-    console.log("getALlReviews",req.body.id,req,body.review)    
+    console.log("getALlReviews",req.body.id,req.body.review)    
     let id=req.body.id
     let reviewText=req.body.review
     const db = dbservice.getDbServiceInstance();
     
     const res1=db.getAllReviews(id)
     var reviewsNew
-    res1.then(data=>reviewsNew=data+","+reviewText)
-    console.log(reviewsNew)
+    res1.then((data)=>{reviewsNew=data[0].review+","+reviewText;
 
     const res2=db.postReview(id,reviewsNew)
     const res3=db.getAllReviews(id)
     res3.then(data=>res.send(data))
+    console.log(reviewsNew)
+
+})
+    
+
+    
     })
 // create 
 app.post("/insert",(req,res)=>{

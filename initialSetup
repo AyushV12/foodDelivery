@@ -2,9 +2,13 @@ Frontend:-
 
  Commands:-
   -npm i
+  -npm start
+
 Backend:-
  
  Database Setup:-
+ npm i    installing all packages
+ nodemon start    starting backend 
   ->connect with sql server with following credentials
      const connect = mysql.createConnection({
     host:process.env.HOST_NAME,
@@ -12,7 +16,7 @@ Backend:-
     port:process.env.PORT_NUMBER,
     password:process.env.PASSWORD,
     database:process.env.DATABASE
-})
+   })
   set your credentials in .env file
 
 -> make a table named testtable  ( will have 4 columns - id,name,rating,)
