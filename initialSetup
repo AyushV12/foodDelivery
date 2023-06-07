@@ -20,5 +20,6 @@ Backend:-
   set your credentials in .env file
 
 -> make a table named testtable  ( will have 4 columns - id,name,rating,)
-       
+       add restaurants with following details :- id,name,rating,imageURL
 -> make a table named reviews    (will have 2 columns - id,review) (review wouild a comma separated value containing all the reviews)
+       
