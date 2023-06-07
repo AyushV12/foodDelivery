@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Rating } from "@mui/material";
 
 
 
@@ -16,6 +16,9 @@ export default function ResThumbnail(props){
             </div>
             <div className="resNameContainer">
                 <p>{props.name} </p>
+            </div>
+            <div className="ratingContainer">
+            <Rating name="read-only" value={props.rating} readOnly />
             </div>
             <div className="ratingContainer">
                 
