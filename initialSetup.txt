@@ -6,9 +6,10 @@ Frontend:-
 
 Backend:-
  
- Database Setup:-
+ 
  npm i    installing all packages
  nodemon start    starting backend 
+ Database Setup:-
   ->connect with sql server with following credentials
      const connect = mysql.createConnection({
     host:process.env.HOST_NAME,
@@ -19,7 +20,7 @@ Backend:-
    })
   set your credentials in .env file
 
--> make a table named testtable  ( will have 4 columns - id,name,rating,)
+-> make a table named testtable  ( will have 4 columns - id,name,rating,imgeURL)
        add restaurants with following details :- id,name,rating,imageURL
 -> make a table named reviews    (will have 2 columns - id,review) (review wouild a comma separated value containing all the reviews)
-       
+       add some reviews (you can do it from the app directly or in the database)

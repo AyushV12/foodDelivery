@@ -66,7 +66,7 @@ function AllRestaurants(props){
                { showModal===true && <ResThumbnail name={listRestaurants[i1].name} rating={listRestaurants[i1].rating} image={listRestaurants[i1].imageURL}></ResThumbnail> }
             </div>
             <div className="ModalBodyReviewsContainer" style={{textAlign:"left",marginTop:"10px"}}>
-              <div style={{textAlign:"center"}}>
+              <div style={{textAlign:"center",marginTop:"100px"}}>
               <Button variant="contained" color="info" onClick={()=>{setReviewFlag(true)}} style={{marginLeft:"auto"}}>Add Review</Button></div>
               {
                 reviewFlag===true 
