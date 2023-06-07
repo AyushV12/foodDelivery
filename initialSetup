@@ -1,0 +1,20 @@
+Frontend:-
+
+ Commands:-
+  -npm i
+Backend:-
+ 
+ Database Setup:-
+  ->connect with sql server with following credentials
+     const connect = mysql.createConnection({
+    host:process.env.HOST_NAME,
+    user:process.env.USER_NAME,
+    port:process.env.PORT_NUMBER,
+    password:process.env.PASSWORD,
+    database:process.env.DATABASE
+})
+  set your credentials in .env file
+
+-> make a table named testtable  ( will have 4 columns - id,name,rating,)
+       
+-> make a table named reviews    (will have 2 columns - id,review) (review wouild a comma separated value containing all the reviews)
