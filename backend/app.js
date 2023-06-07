@@ -27,11 +27,11 @@ app.post("/postReview",(req,res)=>{
     const res1=db.getAllReviews(id)
     var reviewsNew
     res1.then((data)=>{reviewsNew=data[0].review+","+reviewText;
-
+    console.log(reviewsNew)
     const res2=db.postReview(id,reviewsNew)
     const res3=db.getAllReviews(id)
     res3.then(data=>res.send(data))
-    console.log(reviewsNew)
+
 
 })
     

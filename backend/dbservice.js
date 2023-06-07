@@ -93,7 +93,8 @@ class DbService {
     try{
         console.log("hereAtgetALlREviews")
         const response1= await new Promise((resolve,reject)=>{
-            const query = ``
+            console.log(a,b)
+            const query = `UPDATE reviews SET review='${b}' WHERE id=${a}`
             connect.query(query,(err,result)=>{
                 if(err){
                     reject(new Error (err.message))

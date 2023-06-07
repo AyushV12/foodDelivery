@@ -40,6 +40,8 @@ function AllRestaurants(props){
     function onClickSendReview(){
       async function postReview(){
       const  response =await axios.post("http://localhost:5000/postReview",{review:textArea,id:i1+1})
+      console.log(response)
+      setListReviews(response.data[0].review.split(","))
     }
   postReview()}
     return(
